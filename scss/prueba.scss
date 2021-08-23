@@ -1,0 +1,30 @@
+@import "bases/color";
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Staatliches&display=swap');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width:	100%;
+	background-color: $white;
+	font-family: 'jost', sans-serif;
+	font-size: 16px;
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"nosotros"
+	"servicios"
+	"proyectos"
+	"equipo"
+	"contacto"
+	"footer";
+	grid-template-rows: auto 350px 700px 900px 800px 350px 600px 200px;
+}
+
+@import "estructura/header";
+@import "estructura/sectionIndex";
+@import "estructura/footer";

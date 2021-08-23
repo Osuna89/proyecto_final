@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Punto Neutro Ingenieria - Osuna</title>
+	<link rel="stylesheet" type="text/css" href="css/prueba.css">
+	<script src="https://kit.fontawesome.com/57a2192278.js" crossorigin="anonymous"></script>
+</head>
+<body id="grilla">
+	<header class="header">
+		<div id="logo" class="logo"><a href="index.html"><img src="images/circulo.png" alt="logo" class="logo__imagen"></a></div>
+		<nav class="nav">
+			<div id="return"><a href="#nav__menu" class="nav__icono"><i class="fas fa-bars"></i></a></div>
+			<ul class="nav__menu" id="nav__menu">
+				<li class="nav__menu--return"><a href="#return" class="nav__menu--return__a">return</a></li>
+				<li class="nav__menu--nosotros"><a href="#nosotros" class="nav__menu__enlace">Nosotros</a></li>
+				<li class="desencadenante"><a href="#servicios" class="nav__menu__enlace">Servicios</a></li>
+				<li class="desplegable">
+					<div>
+						<a href="serviciosI.html"  class="nav__menu__enlace--desplegable">Servicios de Ingenieria</a>
+						<a href="serviciosC.html" class="nav__menu__enlace--desplegable">Servicios de Calculo</a>
+					</div>
+			    </li>
+				<li><a href="#Proyectos" class="nav__menu__enlace">Proyectos</a></li>
+				<li><a href="#Equipo" class="nav__menu__enlace">Equipo</a></li>
+				<li><a href="#Contacto" class="nav__menu__enlace">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="main" class="main">
+		<h1 class="main__h1">Punto Neutro Ingenieria - Servicios de Calculo</h1>
+		<video autoplay muted loop="1" class="main__video">
+  		<source src="videos/City2.mp4" type="video/mp4">
+  		</video>
+  	</section>
+
+  	<section id="nosotros" class="nosotros">
+		<article class="nosotros__article"><p>Somos un grupo de Ingenieros Civiles que trabajamos juntos en el área estructural hace ya algunos años y coincidimos en nuestros valores, proyectos profesionales y formas de llevarlos a cabo.
+		</p>
+		</article>
+		<article class="nosotros__article"><img src="images/nosotros.png" alt="nosotros">
+		</article>		
+	</section>
+
+
+	<section id="servicios" class="servicios">
+		<article class="servicios__article">
+			<img src="images/servicioIngenieria.png" alt="Servicios de ingenieria">
+			<h3><a href="serviciosI.html">Servicios de Ingenieria</a></h3>
+			<p>Soluciones en obra, supervición, ejecucion de instrucciones, asesoría estructural. Resultados garantizados.</p>
+		</article>
+		<article class="servicios__article">
+			<img src="images/servicioCalculo.png" alt="Servicio de calculo">
+			<h3><a href="serviciosC.html">Servicios de Calculo</a></h3>
+			<p>Calculo estructural, prueba de cargas, modelado en software 3D, Memoria de cálculo. Resultados garantizados.</p>
+		</article>
+	</section>	
+
+
+	<section id="Proyectos" class="proyectos">
+		<div class="proyecto__video">
+			<video autoplay muted loop="1">
+  				<source src="videos/15.mp4" type="video/mp4">
+  			</video>
+		</div>
+		<div class="proyectos__texto">
+		<h2>Proyectos</h2>
+		<p>Trabajamos con responsabilidad y compromiso para poder lograr los sueños de sus clientes</p>
+		<a href="proyectos.html">Ver más ...</a>
+		</div>
+	</section>
+
+
+	<section id="Equipo" class="equipo">
+		<div class="equipo__div">
+		<h2>Equipo</h2>
+		<p>Nuestra filosofía es optimizar cada proyecto en base a la seriedad y responsabilidad como principales herramientas de fidelización y confianza.</p>
+		<a href="equipo.html">Conócenos</a>
+		</div>
+	</section>
+
+
+	<section id="Contacto" class="contacto">
+		<div class="contacto__div">
+		<h2>Contacto</h2>
+		<form>
+			<div>Ingrese nombre y apellido</div>
+			<input type="text" name="NombreApellido" class="input">
+			<div class="contacto__linea">
+				<div>Sexo:</div>
+				<select name="Sexo">
+					<option value="F">Femenino</option>
+					<option value="M">Masculino</option>
+					<option value="O">Otro</option>
+				</select>
+			</div>
+			<div>Email</div>
+			<input type="Email" name="email" class="input">
+			<div>Que servicios le interesan</div>
+			<div class="contacto__linea">
+				<label for="serviciosIngenieria">Servicios de Ingenieria</label>
+				<input type="checkbox" name="ServiciosIngenieria" value="1">
+			</div>
+			<div class="contacto__linea">
+				<label for="ServiciosCalculo">Servicios de Calculo</label>
+				<input type="checkbox" name="ServiciosCalculo" value="1">
+			</div>
+			<div class="contacto__linea">
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Limpiar Formulario">
+			</div>
+		</form>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__contenedor">
+			<div id="logo" class="footer__contenedor__logo"><a href="index.html"><img src="images/circulo.png" alt="logo" class="logo__imagen"></a></div>
+			<div class="footer__contenedor__p"><p>INGENIERIA CIVIL DEDICADA AL DISEÑO, PROYECTO Y CÁLCULO ESTRUCTURAL DE TODO TIPO DE OBRAS</p></div>
+			<div class="footer__contenedor__contenedoriconos">
+				<a href="https://www.facebook.com/ejeneutroing/" class="footer__contenedor__icono"> <i class="fab fa-facebook-square"></i> </a>
+				<a href="https://www.twitter.com/ejeneutroing/" class="footer__contenedor__icono"> <i class="fab fa-twitter"></i> </a>
+				<a href="https://www.instagram.com/ejeneutroing/" class="footer__contenedor__icono"> <i class="fab fa-instagram"></i> </a>
+			</div>
+		</div>
+		
+	</footer>	
+</body>
+</html>

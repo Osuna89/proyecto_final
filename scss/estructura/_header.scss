@@ -1,0 +1,121 @@
+
+
+.header { 
+	grid-area:header;
+	height: 60px;
+	top:0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	padding: 10px 15px;
+	background-color: $white;
+	font-size: 0.8rem;
+	box-shadow: 0px 3px 25px $colorsombra;
+	z-index: 100;
+	font-weight: bold;
+	.logo {
+		position: relative;
+		top: 5%;
+		width: 45px;
+		height: 45px;
+		a{
+			width: auto;
+			height: auto;
+		}
+		.logo__imagen {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.nav{
+		height: 60px;
+		width: 85%;
+		position: relative;
+		.nav__icono{
+			position:absolute;
+			right:0;
+			top:10px;
+			width: 45px;
+			height: 45px;
+			font-size: 2rem;
+			text-align: right;
+			color: $colorA;
+		}
+		
+		.nav__menu{
+			position: absolute;
+			right: -15px;
+			top: 0px;
+			justify-content:stretch;
+			flex-direction: column;
+			align-items:flex-end;
+			border-bottom: solid 3px $colorA;
+			border-radius: 15px; 
+				
+			li{
+				background-color:$white;
+				display:inline-block;
+				width: 130px;
+				height: auto;
+				text-align:center;
+				letter-spacing: 1px;
+				align-items: center;
+				
+			}
+			
+			.desencadenante{
+				display: none;	
+			}
+			.desplegable{
+				height: auto;
+				border:none;
+			}
+			.nav__menu__enlace{
+				padding: 10px 15px;
+				color: $colorA;
+				text-decoration: none;
+				width: 100%;
+				text-align: center;
+				height: 40px;
+				display: inline-block;
+			}
+			.nav__menu__enlace--desplegable{
+				color: $colorA;
+				text-decoration: none;
+				height: 40px;
+				display: block;
+				width: 130px;
+				padding: 3px 15px;
+			}
+			.nav__menu--return{
+				display: block;
+				border:none;
+				background-color: transparent;
+				z-index: 101;
+				height: 60px;
+				width:45px;
+				color:transparent;
+				a{
+					color:transparent;
+					display:block;
+					height:100%;
+					width: 100%;
+				}
+
+
+			}
+			
+			display:none;
+		}
+		li:last-child {
+			border-bottom: solid 3px $colorA;
+			border-radius: 0px 0px 15px 15px;
+			box-shadow: 0px 15px 15px -10px $colorsombra;
+		}	
+		.nav__menu:target {
+			display: flex;
+		}
+	}
+
+}
