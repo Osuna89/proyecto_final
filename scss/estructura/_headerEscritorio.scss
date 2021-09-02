@@ -1,0 +1,156 @@
+.header { 
+	grid-area:header;
+	height: 80px;
+	top:0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	padding: 10px 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+	background-color: $white;
+	font-size: 0.8rem;
+	box-shadow: 0px 3px 25px $colorsombra;
+	z-index: 100;
+	font-weight: bold;
+	.logo {
+		position: relative;
+		top: 5%;
+		width: 2.8rem;
+		height: 2.8rem;
+		a{
+			width: auto;
+			height: auto;
+		}
+		.logo__imagen {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.nav{
+		height: 60px;
+		width: 85%;
+		position: relative;
+        justify-content:flex-end;
+		.nav__icono{
+			display: none;
+            /*position:absolute;
+			right:0;
+			top:10px;
+			width: 45px;
+			height: 45px;
+			font-size: 2rem;
+			text-align: right;
+			color: $colorA;*/
+		}
+		
+		.nav__menu{
+			position: relative;
+            display: flex;
+			right: 0px;
+			top: 0px;
+			justify-content:flex-end;
+			flex-direction:row;
+			align-items:center;
+			border-bottom: none;
+			border-radius: 15px; 
+				
+			li{
+				background-color:$white;
+				display:inline-block;
+				width: 130px;
+				height: auto;
+				text-align:center;
+				letter-spacing: 1px;
+				align-items: center;
+				
+			}
+			
+			.desencadenante{
+				display:inline-block;	
+			}
+            .desencadenante ::after{
+				font-family: "FontAwesome", san-serif;
+                content: " \f107";
+                vertical-align:text-bottom;
+                	
+			}
+            
+			.desplegable{
+				display:none;
+                height: auto;
+				border:none;
+                
+			}
+            
+            .desencadenante:hover ~ .desplegable{
+                display: flex;
+                position:absolute;
+                top:60px;
+                right:284px;
+                flex-direction: row;
+                width: 230px;
+                text-align: left;
+                box-shadow: 0px 5px 25px $colorsombra;
+                
+            }
+
+            .desplegable:hover {
+                display: flex;
+                position:absolute;
+                top:60px;
+                right:284px;
+                flex-direction: row;
+                width: 230px;
+                text-align: left;
+                box-shadow: 0px 3px 25px $colorsombra;
+                
+            }
+			.nav__menu__enlace{
+				padding: 20px 15px;
+				color: $black;
+				text-decoration: none;
+				width: 100%;
+				text-align: center;
+				height: 60px;
+				display: inline-block;
+			}
+			.nav__menu__enlace--desplegable{
+				color: $black;
+				text-decoration: none;
+				height: 60px;
+				display: block;
+				width: 230px;
+				padding: 20px 15px;
+                
+			}
+			.nav__menu--return{
+				display: block;
+				border:none;
+				background-color: transparent;
+				z-index: 101;
+				height: 60px;
+				width:45px;
+				color:transparent;
+				a{
+					color:transparent;
+					display:block;
+					height:100%;
+					width: 100%;
+				}
+
+
+			}
+			
+			display:flex;
+		}
+		li:last-child {
+			border-bottom: none;
+			/*border-radius: 0px 0px 15px 15px;*/
+			box-shadow: none;
+		}	
+		
+	}
+
+}

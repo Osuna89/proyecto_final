@@ -11,7 +11,7 @@ body {
 	width:	100%;
 	background-color: $white;
 	font-family: 'jost', sans-serif;
-	font-size: 16px;
+	
 	display: grid;
 	grid-template-areas:
 	"header"
@@ -28,3 +28,79 @@ body {
 @import "estructura/header";
 @import "estructura/sectionIndex";
 @import "estructura/footer";
+
+/* Tablet */
+@media only screen and (min-width:768px) {
+
+	html{
+		font-size: 18px;
+	}
+
+}
+
+/* Escritorio */
+@media only screen and (min-width:1200px) {
+
+	html{
+		font-size: 20px;
+	}
+
+	body {
+		grid-template-rows: auto 350px 400px 450px 500px 350px 600px 200px;
+	}
+	@import "estructura/headerEscritorio";
+	.main {
+		.main__h1{
+		padding-top: 140px;
+		}
+		.main__video{
+			width: 100%;
+			min-width: 1800px;
+		}
+	}
+	.nosotros {
+		padding-top: 30px;
+		flex-direction: row;
+		height: 400px;
+		padding-left: 10%;
+		padding-right: 10%;
+		justify-content:space-evenly;
+		.nosotros__article{
+			max-width: 450px;
+		}
+	}
+	.servicios {
+		flex-direction: row;
+		height: 450px;
+		padding-left: 10%;
+		padding-right: 10%;
+		justify-content:space-evenly;
+		padding-bottom: 50px;
+		.servicios__article{
+			max-width: 450px;
+		}
+		a{
+			font-size: 1.5rem;
+		}
+		p{
+			width: 85%;
+			font-size: 1.1rem;
+		}
+	}
+	.proyectos {
+		flex-direction: row;
+		height: 500px;
+		padding-left: 10%;
+		padding-right: 10%;
+		.proyecto__video{
+			max-height:400px;
+		}
+		.proyectos__texto{
+			margin-left: -250px;
+			max-width: 450px;
+			z-index: 1;
+			height: 230px;
+			font-size: 0.8rem;
+		}
+	}
+}

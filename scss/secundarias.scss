@@ -29,3 +29,43 @@ body {
 }
 @import "estructura/sectionSecundarias";
 @import "estructura/footer";
+
+/* Tablet */
+@media only screen and (min-width:768px) {
+
+	html{
+		font-size: 18px;
+	}
+
+}
+
+/* Escritorio */
+@media only screen and (min-width:1200px) {
+
+	html{
+		font-size: 20px;
+	}
+	@import "estructura/headerEscritorio";
+
+	.nav__menu__enlace--activo{
+		display:inline-block;
+		color:$colorA; !important
+		padding: 20px 15px;
+		text-decoration: none;
+		margin-bottom: 0px;
+		width: 100%;
+		text-align: center;
+		height: 60px;
+	}
+	.nav__menu__enlace--desplegable{
+		text-align:left;
+	
+	}
+	.main {
+		
+		.main__video{
+			width: 100%;
+			min-width: 1800px;
+		}
+	}
+}
