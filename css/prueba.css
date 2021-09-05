@@ -233,7 +233,8 @@ body {
   justify-items: center;
   width: 80%;
   max-width: 400px;
-  height: 300px;
+  height: auto;
+  max-height: 300px;
   border-radius: 30px;
   overflow: hidden;
   text-align: center;
@@ -241,7 +242,7 @@ body {
 
 .nosotros .nosotros__article img {
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 
 .nosotros .nosotros__article p {
@@ -291,6 +292,10 @@ body {
           align-items: center;
   width: auto;
   height: 400px;
+}
+
+.servicios h2 {
+  text-align: center;
 }
 
 .servicios a {
