@@ -12,7 +12,14 @@ body {
   font-family: 'jost', sans-serif;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "nosotros" "servicios" "proyectos" "equipo" "contacto" "footer";
+      grid-template-areas: "header"
+ "main"
+ "nosotros"
+ "servicios"
+ "proyectos"
+ "equipo"
+ "contacto"
+ "footer";
   -ms-grid-rows: auto 350px 700px 900px 800px 350px 600px 200px;
       grid-template-rows: auto 350px 700px 900px 800px 350px 600px 200px;
 }
@@ -382,7 +389,7 @@ body {
   width: auto;
   height: 50px;
   border-radius: 30px;
-  background-color: #fb0404;
+  background-color: #000000;
   color: white;
   text-decoration: none;
   border-bottom: 3px solid;
@@ -445,7 +452,7 @@ body {
   width: auto;
   height: 50px;
   border-radius: 30px;
-  background-color: #fb0404;
+  background-color: #000000;
   color: #FFFFFF;
   text-decoration: none;
   border-bottom: 3px solid;
